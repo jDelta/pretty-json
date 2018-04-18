@@ -1,7 +1,7 @@
 {
     "name": "jdelta/pretty-json",
     "type": "library",
-    "description": "The prettier way of visualize JSON",
+    "description": "The new JSON pretty print approach.",
     "keywords": ["json", "pretty", "horizontal", "php"],
     "homepage": "https://jdelta.github.io/pretty-json",
     "license": "MIT",

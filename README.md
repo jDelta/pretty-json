@@ -1,5 +1,5 @@
 # pretty-json
-The prettier way of visualize JSON
+The new JSON pretty print approach.
 
 Example:
 

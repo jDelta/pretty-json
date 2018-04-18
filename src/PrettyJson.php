@@ -5,7 +5,7 @@
  * 
  * https://jdelta.github.io/pretty-json
  * Version 1.0
- *
+ * 
  * Copyright 2018, Jaime Cruz
  * Released under the MIT license
  */
@@ -14,19 +14,20 @@ namespace jDelta;
 
 class PrettyJson {
 
-    const TYPE_VALUE = 5;
-    const TYPE_ARRAY = 6;
-    const TYPE_OBJECT = 7;
+    const TYPE_VALUE = 1;
+    const TYPE_ARRAY = 2;
+    const TYPE_OBJECT = 3;
     const DISTRIBUTION_HORIZONTAL = 1;
     const DISTRIBUTION_VERTICAL = 2;
     const INDENT_SPACES = 4;
 
     /**
-     * Returns the JSON string in a prettier way.
-     * @param string $json the JSON input
-     * @return string
+     * Returns a new JSON string pretty nice formatted for printing.
+     * 
+     * @param string $json the JSON input.
+     * @return string the resulting JSON string.
      */
-    public static function getPrettyJson($json) {
+    public static function getPrettyPrint($json) {
         $data = json_decode($json, true);
         return self::format($data, null, 0);
     }
@@ -59,7 +60,7 @@ class PrettyJson {
         return self::joinBlocks($data, $innerBlocks, $dataKey, $depth + 1);
     }
 
-    /** 
+    /**
      * Joins block of elements producing an array or an object.
      * 
      * @param array $data the data where the blocks come from
