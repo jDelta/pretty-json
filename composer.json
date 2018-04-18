@@ -2,7 +2,7 @@
     "name": "jdelta/pretty-json",
     "type": "library",
     "description": "The new JSON pretty print approach.",
-    "keywords": ["json", "pretty", "horizontal", "php"],
+    "keywords": ["json", "json_encode", "JSON_PRETTY_PRINT", "horizontal", "pretty", "print", "prettyprint"],
     "homepage": "https://jdelta.github.io/pretty-json",
     "license": "MIT",
     "support": {

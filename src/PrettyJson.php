@@ -25,11 +25,16 @@ class PrettyJson {
      * Returns a new JSON string pretty nice formatted for printing.
      * 
      * @param string $json the JSON input.
+     * @param boolean $stripSlashes set to **false** to avoid strip slashes
      * @return string the resulting JSON string.
      */
-    public static function getPrettyPrint($json) {
+    public static function getPrettyPrint($json, $stripSlashes = true) {
         $data = json_decode($json, true);
-        return self::format($data, null, 0);
+        $output = self::format($data, null, 0);
+        if ($stripSlashes) {
+            $output = stripcslashes($output);
+        }
+        return $output;
     }
 
     /**
