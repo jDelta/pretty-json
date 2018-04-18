@@ -1,0 +1,20 @@
+{
+    "name": "jdelta/pretty-json",
+    "type": "library",
+    "description": "The prettier way of visualize JSON",
+    "keywords": ["json", "pretty", "horizontal", "php"],
+    "homepage": "https://jdelta.github.io/pretty-json",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/jDelta/pretty-json/issues",
+        "source": "https://github.com/jDelta/pretty-json"
+    },
+    "authors": [
+        {"name": "Jaime Cruz", "email": "jaime@spacejx.com"}
+    ],
+    "autoload": {
+        "psr-4": {
+            "jDelta\\": "src"
+        }
+    }
+}
